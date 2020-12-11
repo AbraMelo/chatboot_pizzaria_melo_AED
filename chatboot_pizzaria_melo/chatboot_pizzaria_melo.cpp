@@ -49,36 +49,45 @@ int main()
         texto_em_fala("Seja Bem Vindo a Pizzaria Melo");
         texto_em_fala("Qual é o seu nome?");
         string nome = fala_em_texto();
-        texto_em_fala("Ola " + nome + " Aqui está o nosso menu de sabores de Pizzas");
+        texto_em_fala("Olá " + nome + " Aqui está o nosso menu de sabores de Pizzas");
         texto_em_fala("Calabresa");
         texto_em_fala("Mussarela");
         texto_em_fala("Presunto");
         texto_em_fala("Qual você deseja?");
         string opcao = fala_em_texto();
 
-
         if (opcao == ("Calabresa.")) {
             texto_em_fala("Qual tamanho de pizza você deseja?");
             texto_em_fala("A Grande é 30 reais e a Pequena 15 reais");
             string tamanho = fala_em_texto();
             if (tamanho == ("Grande.")) {
-                texto_em_fala("Qual será a sua bebida?");
-                texto_em_fala("Suco ou Refrigerante");
-                string bebida = fala_em_texto();
-                texto_em_fala("Uma Pizza de" + opcao + "," + tamanho + "com um" + bebida + "");
-            }
+                texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
+                texto_em_fala("Suco ou Refrigerante?");
+                string bebidas = fala_em_texto();
+                if (bebidas == ("Suco.")) {
+                    texto_em_fala("Entendi");
+                }
+                if (bebidas == ("Refrigerante.")) {
+                    texto_em_fala("Entendi");
+                }
+            }   
             if (tamanho == ("Pequena.")) {
-                texto_em_fala("Qual será a sua bebida? Elas possuem o preço de 5 reais");
-                texto_em_fala("Suco ou Refrigerante");
-                string bebida = fala_em_texto();
-                texto_em_fala("Uma Pizza de" + opcao + "," + tamanho + "com um" + bebida + "");
+                texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
+                texto_em_fala("Suco ou Refrigerante?");
+                string bebidas = fala_em_texto();
+                if (bebidas == ("Suco.")) {
+                    texto_em_fala("Entendi");
+                }
+                if (bebidas == ("Refrigerante.")) {
+                    texto_em_fala("Entendi");
+                }
             }
-
         }
         else {
             texto_em_fala("Opção Inválida");
         }
-
+   
+        //texto_em_fala("Uma Pizza de" + opcao + "," + tamanho + "com um" + bebida + "");    
         /*
             if
             string sabores = fala_em_texto();
