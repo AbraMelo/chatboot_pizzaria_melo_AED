@@ -43,127 +43,329 @@ int main()
 
         setlocale(LC_ALL, "pt_BR.UTF-8");
 
-        int op;
+        char escolha;
 
-        //do{
-        texto_em_fala("Seja Bem Vindo a Pizzaria Melo");
-        texto_em_fala("Qual é o seu nome?");
-        string nome = fala_em_texto();
-        texto_em_fala("Olá " + nome + " Aqui está o nosso menu de sabores de Pizzas");
-        texto_em_fala("Calabresa");
-        texto_em_fala("Mussarela");
-        texto_em_fala("Presunto");
-        texto_em_fala("Qual você deseja?");
-        string opcao = fala_em_texto();
+        do {
+            texto_em_fala("Seja Bem Vindo a Pizzaria Melo");
+            texto_em_fala("Qual é o seu nome?");
+            string nome = fala_em_texto();
+            texto_em_fala("Olá " + nome + " Aqui está o nosso menu de sabores de Pizzas");
+            texto_em_fala("Calabresa");
+            texto_em_fala("Mussarela");
+            texto_em_fala("Presunto");
+            texto_em_fala("Qual você deseja?");
+            string opcao = fala_em_texto();
 
-        if (opcao == ("Calabresa.")) {
-            texto_em_fala("Qual tamanho de pizza você deseja?");
-            texto_em_fala("A Grande é 30 reais e a Pequena 15 reais");
-            string tamanho = fala_em_texto();
-            if (tamanho == ("Grande.")) {
-                texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
-                texto_em_fala("Suco ou Refrigerante?");
-                string bebidas = fala_em_texto();
-                if (bebidas == ("Suco.")) {
-                    texto_em_fala("Entendi");
+            if (opcao == ("Calabresa.")) {
+                texto_em_fala("Qual tamanho de pizza você deseja?");
+                texto_em_fala("A Grande é 30 reais e a Pequena 15 reais");
+                string tamanho = fala_em_texto();
+                if (tamanho == ("Grande.")) {
+                    texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
+                    texto_em_fala("Suco ou Refrigerante?");
+                    string bebidas = fala_em_texto();
+                    if (bebidas == ("Suco.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                    if (bebidas == ("Refrigerante.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
                 }
-                if (bebidas == ("Refrigerante.")) {
-                    texto_em_fala("Entendi");
-                }
-            }   
-            if (tamanho == ("Pequena.")) {
-                texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
-                texto_em_fala("Suco ou Refrigerante?");
-                string bebidas = fala_em_texto();
-                if (bebidas == ("Suco.")) {
-                    texto_em_fala("Entendi");
-                }
-                if (bebidas == ("Refrigerante.")) {
-                    texto_em_fala("Entendi");
+                if (tamanho == ("Pequena.")) {
+                    texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
+                    texto_em_fala("Suco ou Refrigerante?");
+                    string bebidas = fala_em_texto();
+                    if (bebidas == ("Suco.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                    if (bebidas == ("Refrigerante.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
                 }
             }
-        }
-        else {
-            texto_em_fala("Opção Inválida");
-        }
-   
-        //texto_em_fala("Uma Pizza de" + opcao + "," + tamanho + "com um" + bebida + "");    
-        /*
-            if
-            string sabores = fala_em_texto();
-            if (sabores == ("Calabresa.")) {
-                texto_em_fala("Deseja alguma bebida?");
 
-                texto_em_fala("Anotando o seu pedido...");
-                texto_em_fala("Qual será a forma de pagamento?");
-                texto_em_fala("Crédito ou Débito ou Dinheiro");
-                string pagamento = fala_em_texto();
+            if (opcao == ("Mussarela.")) {
+                texto_em_fala("Qual tamanho de pizza você deseja?");
+                texto_em_fala("A Grande é 30 reais e a Pequena 15 reais");
+                string tamanho = fala_em_texto();
+                if (tamanho == ("Grande.")) {
+                    texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
+                    texto_em_fala("Suco ou Refrigerante?");
+                    string bebidas = fala_em_texto();
+                    if (bebidas == ("Suco.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                    if (bebidas == ("Refrigerante.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                }
+                if (tamanho == ("Pequena.")) {
+                    texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
+                    texto_em_fala("Suco ou Refrigerante?");
+                    string bebidas = fala_em_texto();
+                    if (bebidas == ("Suco.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                    if (bebidas == ("Refrigerante.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                }
             }
-            if (sabores == ("Mussarela.")) {
-                texto_em_fala("Anotando o seu pedido...");
-                texto_em_fala("Qual será a forma de pagamento?");
-                texto_em_fala("Crédito ou Débito ou Dinheiro");
-                string pagamento = fala_em_texto();
+
+            if (opcao == ("Presunto.")) {
+                texto_em_fala("Qual tamanho de pizza você deseja?");
+                texto_em_fala("A Grande é 30 reais e a Pequena 15 reais");
+                string tamanho = fala_em_texto();
+                if (tamanho == ("Grande.")) {
+                    texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
+                    texto_em_fala("Suco ou Refrigerante?");
+                    string bebidas = fala_em_texto();
+                    if (bebidas == ("Suco.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                    if (bebidas == ("Refrigerante.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 35,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                }
+                if (tamanho == ("Pequena.")) {
+                    texto_em_fala("Uma bebida para acompanhar: As duas opções possuem o mesmo valor de 5 reais:");
+                    texto_em_fala("Suco ou Refrigerante?");
+                    string bebidas = fala_em_texto();
+                    if (bebidas == ("Suco.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                    if (bebidas == ("Refrigerante.")) {
+                        texto_em_fala("Vamos finalizar com uma sobremesa, é por conta da casa. Qual é o doce de sua escolha?");
+                        texto_em_fala("Chocolate ou Morango");
+                        string doce = fala_em_texto();
+                        if (doce == ("Chocolate.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                        if (doce == ("Morango.")) {
+                            texto_em_fala("Anotando seu pedido...");
+                            texto_em_fala("Voce pediu uma pizza de " + opcao + " Com um " + bebidas + " E um doce de " + doce + "");
+                            texto_em_fala("O valor a ser pago é R$ 20,00");
+                            texto_em_fala("Como deseja Pagar?");
+                            string pagamento = fala_em_texto();
+                            texto_em_fala("Tudo certo com o seu pedido, obrigado por conversar comigo e pedir uma deliciosa pizza na Pizzaria Melo");
+                        }
+                    }
+                }
             }
-            if (sabores == ("Presunto.")) {
-                texto_em_fala("Anotando o seu pedido...");
-                texto_em_fala("Qual será a forma de pagamento?");
-                texto_em_fala("Crédito ou Débito ou Dinheiro");
-                string pagamento = fala_em_texto();
-            }
+
             else {
-            texto_em_fala("Opção Inválida");
+                texto_em_fala("Opção Inválida");
             }
-        }
-        if (opcao == ("Sobremesas.")) {
-            texto_em_fala("Quais doces você deseja?");
-            texto_em_fala("Chocolate ou Morango");
-            string doces = fala_em_texto();
 
-            if (doces == ("Chocolate.")) {
-                texto_em_fala("Anotando o seu pedido...");
-                texto_em_fala("Qual será a forma de pagamento?");
-                texto_em_fala("Crédito ou Débito ou Dinheiro");
-                string pagamento = fala_em_texto();
-            }
-            else if (doces == ("Morango.")) {
-                texto_em_fala("Anotando o seu pedido...");
-                texto_em_fala("Qual será a forma de pagamento?");
-                texto_em_fala("Crédito ou Débito ou Dinheiro");
-                string pagamento = fala_em_texto();
-            }
-        else {
-           texto_em_fala("Opção Inválida");
-        }
-        }
-        if (opcao == ("Bebidas.")) {
-            texto_em_fala("Qual bebida você deseja?");
-            texto_em_fala("Suco ou Refrigerante");
-            string bebidas = fala_em_texto();
-            if (bebidas == ("Suco.")) {
-                texto_em_fala("Anotando o seu pedido...");
-                texto_em_fala("Qual será a forma de pagamento?");
-                texto_em_fala("Crédito ou Débito ou Dinheiro");
-                string pagamento = fala_em_texto();
-            }
-            else if (bebidas == ("Refrigerante. ")) {
-                texto_em_fala("Anotando o seu pedido...");
-                texto_em_fala("Qual será a forma de pagamento?");
-                texto_em_fala("Crédito ou Débito ou Dinheiro");
-                string pagamento = fala_em_texto();
-            }
-        else {
-           texto_em_fala("Opção Inválida");
-        }
-        }
+            texto_em_fala("Deseja fazer ou reptir um pedido?\nDigite S para Sim\nDigite N para Não");
+            cin >> escolha;
 
-        texto_em_fala("Digite 1 se deseja algo mais ou 2 se deseja sair:");
-        cin >> op;
+        } while (escolha == 'S');
 
-    } while(op==1);
-
-    texto_em_fala("Obrigado, Volte Sempre!");
-    */
+        cout << "Obrigado, Volte Sempre";
     }
     catch (exception e)
     {
