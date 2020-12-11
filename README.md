@@ -1,4 +1,7 @@
 # chatboot_pizzaria_melo_AED
+
+Projeto C++ para o trabalho prático final da disciplina de AED 1.
+
 Pedido em uma pizzaria
 
 Chatbot com Inteligência Artificial
